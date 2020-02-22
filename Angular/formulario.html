@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Maquetación Web</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+    <!--script src='main.js'></!--script-->
+</head>
+
+<body>
+    <header id="header">
+        <div class="center">
+            <!--LOGO-->
+            <div id="logo">
+                <img src="assets/img/logo.jpg" class="img-logo" alt="logotype">
+                <span id="brand">
+                    <strong>Mi</strong> 
+                </span>
+            </div>
+            <!--MENU-->
+            <nav id="menu">
+                <ul>
+                    <li>
+                        <a href="index.html"> MENU</a>
+                    </li>
+                    <li>
+                        <a href="blog.html"> BLOG</a>
+                    </li>
+                    <li>
+                        <a href="formulario.html"> FORMULARIO</a>
+                    </li>
+                    <li>
+                        <a href="#"> PAGINA 1</a>
+                    </li>
+                    <li>
+                        <a href="#"> PAGINA 2</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--Limpiar flotados-->
+            <div class="clearFix"></div>
+        </div>
+    </header>
+
+    <div class="center">
+        <section id="content">
+
+            <h1 class="subHeader">
+                FORMULARIO
+            </h1>
+            <form class="mid-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" />
+                </div>
+
+                <div class="form-group">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" name="apellidos" />
+                </div>
+
+                <div class="form-group">
+                    <label for="bio">Biografia</label>
+                    <textarea name="bio"> </textarea>
+                </div>
+                <div class="form-group radiobuttons">
+                    <input type="radio" name="genero" value="hombre" />Hombre
+                    <input type="radio" name="genero" value="mujer" />Mujer
+                    <input type="radio" name="genero" value="otro" />Otro
+                </div>
+
+                <div class="clearFix"></div>
+                <input type="submit" value="Enviar" class="btn btn-success" />
+            </form>
+
+
+
+        </section>
+        <!--Barras laterales-->
+        <aside id="asidebar">
+            <div id="nav-blog" class="sidebar-item">
+                <h3>Puedes hacer esto</h3>
+                <a href="#" class="btn btn-success">Crear articulo</a>
+            </div>
+            <div id="search" class="sidebar-item">
+                <h3>Buscador</h3>
+                <p>Encuentra el articulo que buscass</p>
+                <form>
+                    <input type="text" name="search" />
+                    <input type="submit" name="submit" value="Buscar" class="btn" />
+                </form>
+            </div>
+        </aside>
+        <div class="clearFix"></div>
+    </div>
+    <footer id="footer">
+        <div class="center">
+            <p>
+                &copy; Oscar Web
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

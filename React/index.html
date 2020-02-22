@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Maquetación Web</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+    <!--script src='main.js'></!--script-->
+</head>
+
+<body>
+    <header id="header">
+        <div class="center">
+            <!--LOGO-->
+            <div id="logo">
+                <img src="assets/img/logo.jpg" class="img-logo" alt="logotype">
+                <span id="brand">
+                    <strong>Mi</strong> 
+                </span>
+            </div>
+            <!--MENU-->
+            <nav id="menu">
+                <ul>
+                    <li>
+                        <a href="index.html"> MENU</a>
+                    </li>
+                    <li>
+                        <a href="blog.html"> BLOG</a>
+                    </li>
+                    <li>
+                        <a href="blog.html"> FORMULARIO</a>
+                    </li>
+                    <li>
+                        <a href="#"> PAGINA 1</a>
+                    </li>
+                    <li>
+                        <a href="#"> PAGINA 2</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--Limpiar flotados-->
+            <div class="clearFix"></div>
+        </div>
+    </header>
+
+    <div id="slider" class="slider-big">
+        <h1> Bienvenido a mi sitio web por Oscar Martinez</h1>
+        <a href="#" class="btnWhite">Ir al blog</a>
+    </div>
+
+    <div class="center">
+        <section id="content">
+            <h2 class="subHeader"> Ultimos artículos</h2>
+            <script>
+                /*window.addEventListener("load", function(event) {
+                                                                                                                    var template = document.getElementById("article-template");
+                                                                                                                    var articles = document.getElementById("articles");
+                                                                                                                    for (var i = 1; i <= 5; i++) {
+                                                                                                                        var clonado = template.cloneNode(true);
+                                                                                                                        var h2 = clonado.getElementsByTagName("h2")[0];
+                                                                                                                        h2.innerHTML = h2.textContent + ' ' + i;
+                                                                                                                        articles.appendChild("clonado");
+                                                                                                                    }
+                                                                                                                });*/
+            </script>
+            <!--Listado articulos-->
+            <div id="articles">
+                <article class="article-item" id="article-template">
+                    <div class="image-wrap">
+                        <img src="assets/img/paisaje.jpg" alt="paisaje" />
+                    </div>
+
+                    <h2>Articulo de prueba</h2>
+                    <span class="date"> 
+                        Hace 5 minutos
+                    </span>
+                    <a href="#"> Leer mas...</a>
+                    <div class="clearFix">
+
+                    </div>
+                </article>
+                <!--AÑADIR ARTICULOS VIA JS-->
+
+                <article class="article-item" id="article-template">
+                    <div class="image-wrap">
+                        <img src="assets/img/paisaje.jpg" alt="paisaje" />
+                    </div>
+
+                    <h2>Articulo de prueba 2</h2>
+                    <span class="date"> 
+                        Hace 5 minutos
+                    </span>
+                    <a href="#"> Leer mas...</a>
+                    <div class="clearFix">
+
+                    </div>
+                </article>
+            </div>
+
+        </section>
+        <!--Barras laterales-->
+        <aside id="asidebar">
+            <div id="nav-blog" class="sidebar-item">
+                <h3>Puedes hacer esto</h3>
+                <a href="#" class="btn btn-success">Crear articulo</a>
+            </div>
+            <div id="search" class="sidebar-item">
+                <h3>Buscador</h3>
+                <p>Encuentra el articulo que buscass</p>
+                <form>
+                    <input type="text" name="search" />
+                    <input type="submit" name="submit" value="Buscar" class="btn" />
+                </form>
+            </div>
+        </aside>
+        <div class="clearFix"></div>
+    </div>
+    <footer id="footer">
+        <div class="center">
+            <p>
+                &copy; Oscar Web
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
